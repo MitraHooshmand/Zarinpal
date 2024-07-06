@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(28px);
+  position: sticky;
+  top: 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  margin: 10px 20px;
+}
+.header-ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.header-ul li {
+  font-size: 14px;
+  margin: 0 17px;
+  font-family: iranyekanwebregular;
+}
+.header-ul li a {
+  text-decoration: none;
+  color: #303030;
+}
+
+.header-ul li a:hover {
+  cursor: pointer;
+}
+.header-ul li:last-child a {
+  border-radius: 20px;
+  background-color: rgba(232, 239, 254, 0.6);
+  color: #28457b;
+  padding: 8px 20px;
+  font-family: YekanBakhBold;
+}
+.header-ul li:last-child a:hover {
+  background-color: #fbf6d9;
+}
+.more-menu {
+  display: flex;
+}
+.more-menu img {
+  width: 7px;
+  margin: 0 4px;
+}
