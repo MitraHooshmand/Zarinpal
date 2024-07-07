@@ -93,7 +93,7 @@ header {
 
 .header-ul li {
   font-size: 14px;
-  margin: 0 17px;
+  margin: 0 0 0 17px;
   font-family: iranyekanwebregular;
 }
 .header-ul li a {
@@ -104,14 +104,14 @@ header {
 .header-ul li a:hover {
   cursor: pointer;
 }
-.header-ul li:last-child a {
+.header-ul > li:last-child a {
   border-radius: 20px;
   background-color: rgba(232, 239, 254, 0.6);
   color: #28457b;
   padding: 8px 20px;
   font-family: YekanBakhBold;
 }
-.header-ul li:last-child a:hover {
+.header-ul > li:last-child a:hover {
   background-color: #fbf6d9;
 }
 .more-menu {
@@ -122,9 +122,95 @@ header {
   margin: 0 4px;
 }
 
-.show-hamburger-menu{
-    animation: FadeInMenu 0.55s forwards;
+.show-hamburger-menu {
+  animation: FadeInMenu 0.55s forwards;
 }
+
+#show-more-menu {
+  position: relative;
+}
+#show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-top: 30px;
+  list-style: none;
+  width: 140px;
+  display: none;
+}
+
+#show-more-menu ul li {
+  display: inline-block;
+  padding: 7px 14px;
+  width: 100%;
+  font-size: 12px;
+  color: black;
+}
+
+#show-more-menu ul li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+
+#show-product-menu {
+  position: relative;
+}
+.product_menu {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding: 11px 0;
+  padding: 26px 12px;
+  margin-top: 30px;
+  display: none;
+  justify-content: flex-start;
+  width: 400px;
+}
+
+.product_menu a {
+  margin: 1px 10px;
+  padding: 15px 3px 14px 15px;
+  display: block;
+  text-align: right;
+}
+.product_menu a:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 10px;
+}
+.product_menu a p:first-child {
+  color: black;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  /* font-weight: 500; */
+}
+
+.product_menu a p:last-child {
+  color: black;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  /* font-weight: 500; */
+}
+
+@keyframes showUp {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
 @keyframes FadeInMenu {
   0% {
     opacity: 0;
