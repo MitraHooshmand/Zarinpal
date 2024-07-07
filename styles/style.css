@@ -188,8 +188,6 @@ header {
   font-size: 0.95rem;
   margin-bottom: 0;
   margin-top: 0;
-
-  /* font-weight: 500; */
 }
 
 .product_menu a p:last-child {
@@ -197,8 +195,6 @@ header {
   font-size: 0.7rem;
   margin-bottom: 0;
   margin-top: 0;
-
-  /* font-weight: 500; */
 }
 
 .banner {
@@ -263,8 +259,6 @@ header {
 .left-banner > img {
   width: 500px;
   filter: drop-shadow(6px 8px 8px #333);
-  /* text-align: left; */
-  /* float: left; */
   justify-content: center;
 }
 .right-banner {
@@ -316,6 +310,31 @@ header {
 @media (max-width: 1200px) {
   header {
     width: 900px;
+  }
+  .banner {
+    width: 900px;
+    height: 400px;
+    padding: 39px 35px 80px;
+  }
+  .right-banner {
+    width: 100%;
+  }
+  .right-banner > h3 {
+    text-align: center;
+    /* margin: 0 auto; */
+    margin-top: 5px;
+    padding-top: 0;
+  }
+  .button-banner {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .right-banner > p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .left-banner {
+    display: none;
   }
 }
 
