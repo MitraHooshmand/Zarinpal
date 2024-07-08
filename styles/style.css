@@ -207,7 +207,7 @@ header {
   font-family: iranyekanwebregular;
   display: flex;
   justify-content: space-between;
-  width: 73%;
+  width: 75%;
 }
 .right-banner h3 {
   display: block;
@@ -222,6 +222,7 @@ header {
   font-size: 18px;
   margin: 25px 0;
   line-height: 2rem;
+  position: relative;
 }
 .button-banner {
   padding: 0;
@@ -307,6 +308,17 @@ header {
   }
 }
 
+@media (max-width: 1440px) {
+     .left-banner img{
+        width: 400px;
+     } 
+     .banner{
+        padding-left: 50px;
+        padding-right: 50px;
+
+     }
+}
+
 @media (max-width: 1200px) {
   header {
     width: 900px;
@@ -331,7 +343,7 @@ header {
   }
   .right-banner > p {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .left-banner {
     display: none;
@@ -352,6 +364,9 @@ header {
   .header-ul li {
     margin: 0 10px;
   }
+  .banner {
+    height: 500px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -366,5 +381,25 @@ header {
     display: block;
     color: #303030;
     cursor: pointer;
+  }
+
+  .banner {
+    width: auto;
+  }
+}
+
+@media (max-width: 570px) {
+  .right-banner > h3 {
+    font-size: 20px;
+    text-align: right;
+    padding-right: 19px;
+    line-height: 28px;
+  }
+  .right-banner{
+    margin-top: 28px;
+  }
+  .right-banner > p {
+    margin-right:12px ;
+    font-size: 14px;
   }
 }
