@@ -202,12 +202,12 @@ header {
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
   margin: 20px auto;
   border-radius: 18px;
-  height: 85vh;
+  /* height: 85vh; */
   padding: 124px 60px 80px;
   font-family: iranyekanwebregular;
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 1050px;
 }
 .right-banner h3 {
   display: block;
@@ -218,11 +218,10 @@ header {
 }
 
 .right-banner > p {
-  /* font-family: iranyekanwebregular; */
+  /* position: relative; */
   font-size: 18px;
   margin: 25px 0;
   line-height: 2rem;
-  position: relative;
 }
 .button-banner {
   padding: 0;
@@ -308,7 +307,7 @@ header {
   }
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
      .left-banner img{
         width: 400px;
      } 
@@ -317,7 +316,8 @@ header {
         padding-right: 50px;
 
      }
-}
+     
+} */
 
 @media (max-width: 1200px) {
   header {
@@ -325,15 +325,18 @@ header {
   }
   .banner {
     width: 900px;
-    height: 400px;
-    padding: 39px 35px 80px;
+    /* height: 400px; */
+    /* padding: 39px 35px 80px; */
+    padding: 60px 40px 120px;
   }
-  .right-banner {
+  .left-banner img {
+    width: 400px;
+  }
+  /* .right-banner {
     width: 100%;
   }
   .right-banner > h3 {
     text-align: center;
-    /* margin: 0 auto; */
     margin-top: 5px;
     padding-top: 0;
   }
@@ -347,7 +350,7 @@ header {
   }
   .left-banner {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 990px) {
@@ -365,7 +368,30 @@ header {
     margin: 0 10px;
   }
   .banner {
-    height: 500px;
+    width: auto;
+    padding: 40px 40px 85px;
+    margin-left: 35px;
+    margin-right: 35px;
+    /* height: 500px; */
+  }
+  .right-banner {
+    width: 100%;
+    text-align: center;
+  }
+  .left-banner  {
+    display: none;
+  }
+  .right-banner> h3{
+    text-align: center;
+  }
+  .right-banner > p {
+    /* text-align: center; */
+    
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  .button-banner {
+    margin-top: 30px;
   }
 }
 
@@ -395,11 +421,11 @@ header {
     padding-right: 19px;
     line-height: 28px;
   }
-  .right-banner{
+  .right-banner {
     margin-top: 28px;
   }
   .right-banner > p {
-    margin-right:12px ;
+    margin-right: 12px;
     font-size: 14px;
   }
 }
