@@ -290,34 +290,35 @@ header {
   justify-content: space-between;
   padding: 70px 2px 90px;
   width: 1100px;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 .section-image {
-  width: 500px;
-  height: 483px;
+  width: 450px;
+  height: 480px;
   /* text-align: right; */
   position: relative;
   right: -70px;
   top: -33px;
 }
 .online-payment > div {
-  width: 500px;
+  width: 530px;
+  margin: 30px 0;
 }
 .online-payment > div > h2 {
   font-family: YekanBakhMedium;
   color: #747480;
   font-size: 22px;
-  font-weight: 400px;
+  font-weight: 500;
   text-align: right;
   margin-bottom: 3px;
 }
 .online-payment > div > h3 {
   font-family: YekanBakhHeavy;
   font-size: 32px;
-  font-weight: 600px;
+  font-weight: 600;
   text-align: right;
   margin-bottom: 4px;
-  margin-top: 5px;
+  margin: 5px 0 10px;
 }
 .online-payment > div > p {
   font-family: YekanBakhMedium;
@@ -328,8 +329,45 @@ header {
   font-size: 16px;
   margin: 3px auto;
 }
-/* .online-payment>div> */
+.section-button {
+  display: flex;
+  margin-top: 40px;
+}
+.first-button {
+  padding: 4px 14px;
+  background-color: #ffda02;
+  border-radius: 10px;
+  line-height: 28px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  font-family: iranyekanwebmedium;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 17px;
+}
 
+.second-button {
+  padding: 4px 14px;
+  background-color: #f1f5fe;
+  border-radius: 10px;
+  line-height: 28px;
+  border: none;
+  text-decoration: none;
+  color: #2e4b7f;
+  font-family: iranyekanwebmedium;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 17px;
+  /* position: relative; */
+}
+.section-button .second-button>img{
+  width: 18px;
+  height: 15px;
+  /* margin-right: 5px; */
+  position: relative;
+  top: 4px;
+}
 @keyframes showUp {
   0% {
     opacity: 0;
