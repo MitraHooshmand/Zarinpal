@@ -284,6 +284,52 @@ header {
   top: -60px;
 }
 
+.online-payment {
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+  padding: 70px 2px 90px;
+  width: 1100px;
+  align-items: flex-start;
+}
+.section-image {
+  width: 500px;
+  height: 483px;
+  /* text-align: right; */
+  position: relative;
+  right: -70px;
+  top: -33px;
+}
+.online-payment > div {
+  width: 500px;
+}
+.online-payment > div > h2 {
+  font-family: YekanBakhMedium;
+  color: #747480;
+  font-size: 22px;
+  font-weight: 400px;
+  text-align: right;
+  margin-bottom: 3px;
+}
+.online-payment > div > h3 {
+  font-family: YekanBakhHeavy;
+  font-size: 32px;
+  font-weight: 600px;
+  text-align: right;
+  margin-bottom: 4px;
+  margin-top: 5px;
+}
+.online-payment > div > p {
+  font-family: YekanBakhMedium;
+  line-height: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfe1e4;
+  text-align: right;
+  font-size: 16px;
+  margin: 3px auto;
+}
+/* .online-payment>div> */
+
 @keyframes showUp {
   0% {
     opacity: 0;
