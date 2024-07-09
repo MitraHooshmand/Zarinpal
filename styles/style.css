@@ -6,14 +6,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
+  width: 1050px;
   margin: 0 auto;
   padding: 5px 0;
   background-color: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(28px);
   position: sticky;
   top: 0;
-  /* border-radius: 5px; */
   transition: all 0.3s ease;
 }
 .hamburger-icon {
@@ -218,10 +217,9 @@ header {
 }
 
 .right-banner > p {
-  /* position: relative; */
-  font-size: 18px;
+  font-size: 1.15rem;
   margin: 25px 0;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 .button-banner {
   padding: 0;
@@ -258,7 +256,7 @@ header {
 
 .left-banner > img {
   width: 500px;
-  filter: drop-shadow(6px 8px 8px #333);
+  /* filter: drop-shadow(6px 8px 8px #333); */
   justify-content: center;
 }
 .right-banner {
@@ -283,7 +281,6 @@ header {
 .go-down img {
   width: 15px;
   position: relative;
-  /* bottom: 55px; */
   top: -60px;
 }
 
@@ -307,50 +304,18 @@ header {
   }
 }
 
-/* @media (max-width: 1440px) {
-     .left-banner img{
-        width: 400px;
-     } 
-     .banner{
-        padding-left: 50px;
-        padding-right: 50px;
-
-     }
-     
-} */
-
 @media (max-width: 1200px) {
   header {
     width: 900px;
   }
   .banner {
     width: 900px;
-    /* height: 400px; */
-    /* padding: 39px 35px 80px; */
-    padding: 60px 40px 120px;
+    padding: 60px 40px 60px;
   }
   .left-banner img {
-    width: 400px;
+    width: 430px;
+    margin-top: 79px;
   }
-  /* .right-banner {
-    width: 100%;
-  }
-  .right-banner > h3 {
-    text-align: center;
-    margin-top: 5px;
-    padding-top: 0;
-  }
-  .button-banner {
-    text-align: center;
-    margin-top: 30px;
-  }
-  .right-banner > p {
-    text-align: center;
-    font-size: 1rem;
-  }
-  .left-banner {
-    display: none;
-  } */
 }
 
 @media (max-width: 990px) {
@@ -372,21 +337,18 @@ header {
     padding: 40px 40px 85px;
     margin-left: 35px;
     margin-right: 35px;
-    /* height: 500px; */
   }
   .right-banner {
     width: 100%;
     text-align: center;
   }
-  .left-banner  {
+  .left-banner img {
     display: none;
   }
-  .right-banner> h3{
+  .right-banner > h3 {
     text-align: center;
   }
   .right-banner > p {
-    /* text-align: center; */
-    
     font-size: 1rem;
     margin: 5px 0;
   }
@@ -427,5 +389,6 @@ header {
   .right-banner > p {
     margin-right: 12px;
     font-size: 14px;
+    text-align: justify;
   }
 }
