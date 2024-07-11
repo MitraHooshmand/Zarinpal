@@ -369,6 +369,7 @@ header {
   position: relative;
   top: 4px;
 }
+
 @keyframes showUp {
   0% {
     opacity: 0;
