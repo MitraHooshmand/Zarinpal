@@ -12,6 +12,7 @@ header {
   background-color: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(28px);
   position: sticky;
+  z-index: 100;
   top: 0;
   transition: all 0.3s ease;
 }
@@ -268,7 +269,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative; 
   bottom: 58px;
 }
 
@@ -288,7 +289,7 @@ header {
   display: flex;
   margin: 20px auto;
   justify-content: space-between;
-  padding: 70px 2px 90px;
+  padding: 1px 2px 90px;
   width: 1100px;
   /* align-items: flex-start; */
 }
@@ -297,7 +298,7 @@ header {
   height: 480px;
   /* text-align: right; */
   position: relative;
-  right: -70px;
+  right: -35px;
   top: -33px;
 }
 .online-payment > div {
@@ -400,6 +401,12 @@ header {
     width: 430px;
     margin-top: 79px;
   }
+  .online-payment{
+    width: 940px;
+  }
+  .section-image {
+    right: 20px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -438,6 +445,25 @@ header {
   }
   .button-banner {
     margin-top: 30px;
+  }
+  .online-payment{
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-text{
+    /* margin: 0; */
+    width: 95%;
+    /* color: red; */
+    border: 1px solid black;
+  }
+  .section-image{
+    /* top: -78px; */
+    /* margin: 3px 0; */
+            top: 60px;
+        margin: auto;
+                width: 463px;
+        height: 483px;
   }
 }
 
