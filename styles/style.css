@@ -269,7 +269,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; 
+  position: relative;
   bottom: 58px;
 }
 
@@ -301,11 +301,11 @@ header {
   right: -35px;
   top: -33px;
 }
-.online-payment > div {
+.section-text {
   width: 530px;
   margin: 30px 0;
 }
-.online-payment > div > h2 {
+.section-text > h2 {
   font-family: YekanBakhMedium;
   color: #747480;
   font-size: 22px;
@@ -313,7 +313,7 @@ header {
   text-align: right;
   margin-bottom: 3px;
 }
-.online-payment > div > h3 {
+.section-text > h3 {
   font-family: YekanBakhHeavy;
   font-size: 32px;
   font-weight: 600;
@@ -321,7 +321,7 @@ header {
   margin-bottom: 4px;
   margin: 5px 0 10px;
 }
-.online-payment > div > p {
+.section-text > p {
   font-family: YekanBakhMedium;
   line-height: 40px;
   padding-bottom: 20px;
@@ -362,7 +362,7 @@ header {
   margin-top: 17px;
   /* position: relative; */
 }
-.section-button .second-button>img{
+.section-button .second-button > img {
   width: 18px;
   height: 15px;
   /* margin-right: 5px; */
@@ -401,7 +401,7 @@ header {
     width: 430px;
     margin-top: 79px;
   }
-  .online-payment{
+  .online-payment {
     width: 940px;
   }
   .section-image {
@@ -446,24 +446,23 @@ header {
   .button-banner {
     margin-top: 30px;
   }
-  .online-payment{
+  .online-payment {
     width: auto;
     flex-direction: column;
     align-items: center;
   }
-  .section-text{
-    /* margin: 0; */
+  .section-text {
     width: 95%;
-    /* color: red; */
-    border: 1px solid black;
+    margin-top: 0;
+    position: relative;
+    top: -125px;
   }
-  .section-image{
-    /* top: -78px; */
-    /* margin: 3px 0; */
-            top: 60px;
-        margin: auto;
-                width: 463px;
-        height: 483px;
+  .section-image {
+    top: -68px;
+    margin: auto;
+  }
+  .section-button {
+    margin-top: 17px;
   }
 }
 
@@ -484,6 +483,26 @@ header {
   .banner {
     width: auto;
   }
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -80px;
+  }
+  .section-text > h3 {
+    font-size: 26px;
+  }
+  .section-text > p {
+    padding: 0 30px;
+    font-size: 14px;
+  }
+  .section-button {
+    justify-content: center;
+  }
+  .section-image {
+    width: 460px;
+    height: 480px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -500,5 +519,18 @@ header {
     margin-right: 12px;
     font-size: 14px;
     text-align: justify;
+  }
+  .section-image {
+    display: none;
+  }
+  .section-text {
+    width: 80%;
+    padding: 0 10px;
+  }
+  .section-text > h3 {
+    font-size: 1.5rem;
+  }
+  .section-text > p {
+    padding: 0;
   }
 }
