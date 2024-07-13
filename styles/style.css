@@ -604,6 +604,18 @@ footer > div > div > p {
   border-radius: 10px;
   margin-left: 15px;
 }
+.bell{
+  border-radius: 50%;
+  background-color: #2e82ff;
+  width: fit-content;
+  padding: 7px 7px 0 ;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.bell img{
+  width: 40px;
+}
 @media (max-width: 1200px) {
   header {
     width: 900px;
