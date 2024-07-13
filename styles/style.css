@@ -570,7 +570,6 @@ footer > div > div > p {
 }
 .footer-links > div > ul > li {
   padding: 7px 0;
-  
 }
 .footer-links > div > ul > li > a {
   font-family: YekanBakhMedium;
@@ -663,6 +662,9 @@ footer > div > div > p {
   .phone-number {
     font-size: 24px;
   }
+  footer {
+    width: 940px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -745,8 +747,20 @@ footer > div > div > p {
     border-radius: 18px;
     color: #21457f;
   }
+  footer {
+    flex-direction: column;
+    width: 95%;
+    margin: 5px 25px;
+  }
+  footer .footer-links {
+    width: 100%;
+  }
+  .footer-social-media {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 10px;
+  }
 }
-
 @media (max-width: 750px) {
   .header-ul {
     display: none;
@@ -817,6 +831,18 @@ footer > div > div > p {
   .phone-number {
     font-size: 14px;
   }
+
+  footer .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-links div {
+    margin-top: 25px;
+  }
+  footer {
+    width: calc(100% - 120px);
+    margin: 0 60px;
+  }
 }
 
 @media (max-width: 570px) {
@@ -879,5 +905,26 @@ footer > div > div > p {
     grid-template-columns: 190px;
     text-align: right;
     margin-right: 20px;
+  }
+  footer {
+    width: calc (100% - 60px);
+    margin: 0 30px;
+  }
+  .footer-links p,
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+  .footer-social-media p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer-social-media a {
+    width: 23px;
+    height: 29px;
+    width: 90%;
+  }
+  .footer-social-media img {
+    width: 18px;
+    height: 18px;
   }
 }
